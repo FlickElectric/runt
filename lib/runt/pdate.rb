@@ -153,9 +153,9 @@ module Runt
     # 
     # Author:: Jodi Showers
     #
-    def marshal_dump
-      [date_precision, ajd, start, offset]
-    end
+    # def marshal_dump
+    #   [date_precision, ajd, start, offset]
+    # end
 
 	#FIXME: marshall broken in 1.9
     #
@@ -163,9 +163,9 @@ module Runt
     # 
     # Author:: Jodi Showers
     #
-    def marshal_load(dumped_obj)
-      @date_precision, @ajd, @sg, @of=dumped_obj
-    end
+    # def marshal_load(dumped_obj)
+    #   @date_precision, @ajd, @sg, @of=dumped_obj
+    # end
 
   end
 end
